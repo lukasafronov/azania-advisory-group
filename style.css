@@ -14,8 +14,10 @@ body {
   min-height: 100vh;
 
   display: flex;
-  justify-content: center;   /* vertical centering */
-  align-items: center;       /* horizontal centering */
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-top: 80px;
 
   background:
     linear-gradient(rgba(0,0,0,0.62), rgba(0,0,0,0.62)),
@@ -25,6 +27,7 @@ body {
 
   color: var(--text);
 }
+
 
 /* Main centered content block */
 .wrap {
