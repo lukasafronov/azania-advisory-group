@@ -14,10 +14,10 @@ body {
   min-height: 100vh;
 
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: center;        /* keeps it centered left–right */
+  justify-content: flex-start;/* moves content toward the top */
 
-  padding-top: 80px;
+  padding-top: 80px;          /* controls how high it sits */
 
   background:
     linear-gradient(rgba(0,0,0,0.62), rgba(0,0,0,0.62)),
@@ -27,6 +27,7 @@ body {
 
   color: var(--text);
 }
+
 
 
 /* Main centered content block */
