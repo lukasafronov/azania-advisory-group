@@ -64,7 +64,7 @@ body{
   line-height: 1.08;
 
   /* responsive size like that example */
-  font-size: clamp(38px, 5.2vw, 78px);
+  font-size: clamp(26px, 4.2vw, 60px);
 }
 
 .copy{
