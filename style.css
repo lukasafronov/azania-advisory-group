@@ -9,33 +9,33 @@
 }
 
 /* Page background + centering */
-body {
+body{
   margin: 0;
   min-height: 100vh;
 
   display: flex;
+  justify-content: flex-start; /* not middle */
+  align-items: center;         /* keep centered horizontally */
   flex-direction: column;
 
-  align-items: center;          /* keeps content centered horizontally */
-  justify-content: flex-start;  /* moves content toward the top */
-
-  padding-top: 50px;            /* controls how high it sits */
+  padding-top: 70px;           /* controls how high the content sits */
 
   background:
-    linear-gradient(rgba(0,0,0,0.62), rgba(0,0,0,0.62)),
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
     url("assets/bg.jpg");
   background-size: cover;
   background-position: center;
 
-  color: var(--text);
+  color: rgba(255,255,255,0.92);
 }
 
 
+
 /* Main centered content block */
-.wrap {
+.wrap{
   width: 100%;
-  max-width: var(--max-width);
-  padding: 48px 22px;
+  max-width: 980px;
+  padding: 0 22px 60px;
   text-align: center;
 }
 
@@ -46,6 +46,34 @@ body {
   max-width: 600px;
   width: 100%;
   height: auto;
+}
+
+.divider{
+  width: 260px;                /* line length */
+  height: 2px;                 /* line thickness */
+  background: rgba(255,255,255,0.85);
+  margin: 26px auto 34px;      /* space above + below */
+}
+
+.hero{
+  margin: 0 auto 26px;
+  max-width: 900px;
+
+  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  line-height: 1.08;
+
+  /* responsive size like that example */
+  font-size: clamp(38px, 5.2vw, 78px);
+}
+
+.copy{
+  margin: 0 auto 16px;
+  max-width: 820px;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.95;
 }
 
 /* Main paragraph text */
